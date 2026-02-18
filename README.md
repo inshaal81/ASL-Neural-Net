@@ -1,12 +1,12 @@
-# SignSync: ASL Alphabet Recognition
+# ASL Neural Net
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/inshaal81/SignSync/blob/main/notebooks/SignSync_Colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/inshaal81/SignSync/blob/main/notebooks/ASL_Neural_Net_Colab.ipynb)
 
 A deep neural network built from scratch with NumPy to recognize American Sign Language (ASL) alphabet gestures. This project demonstrates fundamental deep learning concepts without relying on high-level frameworks like TensorFlow or PyTorch.
 
 ## Overview
 
-SignSync classifies static hand gestures representing 24 letters of the ASL alphabet (excludes J and Z which require motion). The model achieves **77.97% test accuracy** using a fully-connected neural network.
+ASL Neural Net classifies static hand gestures representing 24 letters of the ASL alphabet (excludes J and Z which require motion). The model achieves **77.97% test accuracy** using a fully-connected neural network.
 
 ## Features
 
@@ -45,7 +45,7 @@ INPUT (784) → DENSE(128) → RELU → DENSE(64) → RELU → DENSE(24) → SOF
 ```bash
 # Clone the repository
 git clone https://github.com/inshaal81/SignSync.git
-cd SignSync
+cd ASL-Neural-Net
 
 # Create virtual environment
 python -m venv venv
@@ -79,7 +79,7 @@ python scripts/evaluate.py
 ## Project Structure
 
 ```
-SignSync/
+ASL-Neural-Net/
 ├── src/
 │   ├── model.py          # DeepNeuralNetwork class
 │   ├── utils.py          # Data loading, normalization
@@ -88,7 +88,7 @@ SignSync/
 │   ├── train.py          # Training script
 │   └── evaluate.py       # Evaluation script
 ├── notebooks/
-│   └── SignSync_Colab.ipynb  # Interactive demo (Google Colab)
+│   └── ASL_Neural_Net_Colab.ipynb  # Interactive demo (Google Colab)
 └── data/datasets/        # Dataset files (not committed)
 ```
 

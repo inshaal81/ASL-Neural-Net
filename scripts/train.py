@@ -10,7 +10,7 @@ from src.utils import load_data
 
 def main(): 
     print("="*50)
-    print("SignSync: ASL Alphabet Recognition")
+    print("ASL Neural Net: ASL Alphabet Recognition")
     print("="*50)
     
     # Load data
